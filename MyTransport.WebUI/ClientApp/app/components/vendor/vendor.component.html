@@ -1,0 +1,27 @@
+﻿<p *ngIf="!vendors"><em>Loading...</em></p>
+
+<table class='table' *ngIf="vendors">
+    <thead>
+        <tr>
+            <th>Vendor Name</th>
+            <th>Owner Name</th>
+            <th>Owner Mobile</th>
+            <th>Owner Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vendor of vendors">
+            <td>{{ vendor.vendorName }}</td>
+            <td>{{ vendor.ownerName }}</td>
+            <td>{{ vendor.ownerMobile }}</td>
+            <td>{{ vendor.ownerEmail }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p-dataTable [(value)]="vendors" selectionMode="single" [(selection)]="selectedVendor" (onRowSelect)="onRowSelect($event)" rows="5" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[5,10,20]" [globalFilter]="gb" [responsive]="true">
+    <p-column field="vendorName" header="Vendor Name" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+    <p-column field="ownerName" header="Owner Name" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+    <p-column field="ownerMobile" header="Owner Name" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+    <p-column field="ownerEmail" header="Owner Email" [filter]="true" filterMatchMode="contains" [sortable]="true"></p-column>
+</p-dataTable>

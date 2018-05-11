@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTransport.Domain", "MyTransport.Domain\MyTransport.Domain.csproj", "{A72741EE-E6B6-44AD-9B6F-699AFE53402D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTransport.WebUI", "MyTransport.WebUI\MyTransport.WebUI.csproj", "{B00D9B76-6870-41DE-84AB-B309A58476E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72741EE-E6B6-44AD-9B6F-699AFE53402D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72741EE-E6B6-44AD-9B6F-699AFE53402D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72741EE-E6B6-44AD-9B6F-699AFE53402D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72741EE-E6B6-44AD-9B6F-699AFE53402D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00D9B76-6870-41DE-84AB-B309A58476E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00D9B76-6870-41DE-84AB-B309A58476E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00D9B76-6870-41DE-84AB-B309A58476E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00D9B76-6870-41DE-84AB-B309A58476E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E99962D1-38CC-48CE-8B10-A2835A61A873}
+	EndGlobalSection
+EndGlobal
