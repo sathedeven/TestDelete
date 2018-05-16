@@ -15,6 +15,7 @@ using Newtonsoft.Json;
 
 namespace MyTransport.WebUI.Controllers
 {
+    [Route("api/[controller]")]
     public class AuthController : Controller
     {
         private readonly UserManager<AppUser> _userManager;

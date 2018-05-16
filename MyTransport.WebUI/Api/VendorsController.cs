@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using MyTransport.Domain.Entities;
 
 namespace MyTransport.WebUI.Controllers
 {
+    [Authorize(Policy = "ApiUser")]
     [Route("api/[controller]")]
     public class VendorsController : Controller
     {
@@ -21,6 +23,7 @@ namespace MyTransport.WebUI.Controllers
         }
 
         // GET: Vendors
+
         [HttpGet]
         public async Task<IEnumerable<Vendor>> Index()
         {

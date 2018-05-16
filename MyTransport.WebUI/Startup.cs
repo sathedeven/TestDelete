@@ -21,7 +21,7 @@ using MyTransport.WebUI.Helpers;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-
+using MyTransport.WebUI.Auth;
 
 namespace MyTransport.WebUI
 {
@@ -41,6 +41,8 @@ namespace MyTransport.WebUI
         {
             services.AddDbContext<MyTransportDbContext>(options =>
        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddSingleton<IJwtFactory, JwtFactory>();
 
             services.AddMvc();
 
